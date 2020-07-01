@@ -15,11 +15,11 @@ wt_t7_model_file_path = os.path.join( dir_path, 'models/DeepWt_T7.hd5' )
 esp_model_file_path = os.path.join( dir_path, 'models/esp_rnn_model.hd5' )
 hf_model_file_path = os.path.join( dir_path, 'models/hf_rnn_model.hd5' )
 
-model_wt_u6 = load_model( wt_u6_model_file_path )
-model_wt_t7 = load_model( wt_t7_model_file_path )
+model_wt_u6 = load_model( wt_u6_model_file_path, optimizer = opt)
+model_wt_t7 = load_model( wt_t7_model_file_path, optimizer = opt)
 
-model_hf = load_model( hf_model_file_path )
-model_esp = load_model( esp_model_file_path )
+model_hf = load_model( hf_model_file_path, optimizer = opt )
+model_esp = load_model( esp_model_file_path, optimizer = opt )
 
 
 
